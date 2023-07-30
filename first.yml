@@ -1,0 +1,20 @@
+name: Tanish Jain
+age: 21
+server:
+   name: ubuntu
+   capacity: 500 GB
+social_media:
+   - insta-tanishj197
+   - linkedin-tanish-jain
+   - snapchat-tanishj1907
+testing: |
+ this is 
+ multi line 
+ string   
+list_of_servers:
+  - server_1:
+    name: "ec2" 
+    volume: 8gb
+  - server_2:
+    name: "s3" 
+    volume: 18gb

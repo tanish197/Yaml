@@ -1,0 +1,23 @@
+"apple" : "I am red fruit"
+1: :"this is tanish's roll number"
+
+---
+
+#lists
+- apple
+- mango
+- banana
+
+---
+
+cities:
+  - new delhi
+  - lucknow
+  - mumbai
+
+---
+
+cities: [new delhi,  mumbai]
+---
+{mango: "yellow fruit", age: 21}
+...

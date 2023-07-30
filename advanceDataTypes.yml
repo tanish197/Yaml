@@ -1,0 +1,104 @@
+student: !!seq
+ - marks
+ - name
+ - roll_no
+
+#like this also
+cities: [new delhi,  mumbai]
+
+
+#some of the keys of the seq will be empty
+
+#sparse seq
+sparse seq:
+ - hey
+ - how
+ - 
+ - Null
+ - sup
+
+ #nested sequence 
+ -
+  - mango
+  - banana
+  - grapes
+ - 
+  - marks
+  - name 
+  - roll_no
+
+---
+
+#key: value pairs with maps
+!!map
+
+#nested mapping: map within a map
+name: Tanish
+roll:
+  age: 21
+  job: student
+
+#pairs: keys have a duplicate value
+#!!pairs
+
+pair example: !!pairs
+ - job: student
+ - job: mentor
+
+#same as
+pair_example: !!pairs [job: student, job: mentor] #just given different name to ignore errors: pair_example
+#this will be an array of hashtables
+
+# !!set will allow to have unique values
+names: !!set
+  ? Tanish
+  ? Ram
+  ? Sham 
+
+
+#dictionary !!omp
+people: !!omap
+  - Tanish:
+     name: Tanish Jain
+     age: 21
+     height: 165
+  - Ram:
+     name: Ram Charan
+     age: 20
+     height: 185
+  - Sham:
+     name: Sham Dass
+     age: 48
+     height: 155
+
+#reusing some properties using anchors
+likings: &likes
+ fav fruit: mango
+ dislike: pomegranate
+
+person:
+ name: Tanish Jain
+ <<: *likes
+
+person1:
+ name: Ram Charan
+ <<: *likes
+ dislike: apple #this will override
+   
+person2:
+ name: Sham Dass
+ <<: *likes
+      
+ 
+
+
+
+
+
+
+
+
+
+
+
+

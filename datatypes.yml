@@ -1,0 +1,49 @@
+#String Variables in 3 ways:
+name: Tanish Jain
+fruit: "banana"
+job: 'devops'
+
+bio: | 
+ hey my name is tanish jain
+ I am very nice dude
+
+#write a single line in multiple line
+message: >
+ this will
+ all be 
+ in one line
+
+#same as
+message1: this will all be in one line
+
+
+number: 5474
+marks: 95.0
+booleanValue: !!bool false #n, N, false, False, FALSE
+#same for true ->  yes, y, Y
+
+
+#specify the type
+zero: !!int 0
+positiveNumber: !!int 21
+negativeNumber: !!int -45
+binaryNumber: !!int 11010
+octaNumber: !!int 06574
+hexa: !!int 0x45
+commaValue: +540_000 #540,000
+exponentialNumber: 6.023e56
+
+#flaoting points
+floatingMarks: !!float 56.85
+infinite: !!float .inf
+not a num: .nan
+
+#null
+surname: !!null Null # or null NULL ~
+~: this is null key
+
+#dates and time
+date: !!timestamp 2023-07-19
+india time: 2002-07-19T01:15:00.00 +5:30
+no time zone: 2002-07-19T01:15:00.00 
+
